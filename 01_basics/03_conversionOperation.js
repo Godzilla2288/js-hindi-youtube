@@ -42,9 +42,9 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2);
 // console.log(1 + 2 + "2");
 
-console.log( + true);
-console.log(+ "" );
+// console.log( + true);
+// console.log(+ "" );
 
 let  gameCounter = 100
-gameCounter++;
+++gameCounter;
 console.log(gameCounter);
