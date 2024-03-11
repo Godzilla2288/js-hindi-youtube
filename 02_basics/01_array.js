@@ -10,7 +10,7 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const myHeros = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4)
-console.log(myArr[1]);
+// console.log(myArr[1]);
 
 // Array methods
 
@@ -30,7 +30,23 @@ console.log(myArr[1]);
 // console.log(myArr.indexOf(3));  // => 3 . In this case no 3 Exist in the Array,
 //             // and so it returns the Index Position of no 3 which is 3 in this case.
             
-            
-console.log(myArr);
+// const newArr = myArr.join() // It converts the myArr ARRAY into STRING.
+
+// console.log(myArr); // => [ 0, 1, 2, 3, 4, 5 ]
+// console.log(newArr); // => 0,1,2,3,4,5
+// console.log(typeof newArr); // => string.
 
 
+ // SLICE, SPLICE
+
+console.log("A ", myArr); // => A  [ 0, 1, 2, 3, 4, 5 ]
+
+const myn1 = myArr.slice(1, 3) // It Does Not Manipulate the ORIGINAL Array. 
+
+console.log(myn1); // => [ 1, 2 ]
+console.log("B ", myArr); // => B  [ 0, 1, 2, 3, 4, 5 ]
+
+
+const myn2 = myArr.splice(1, 3) // It Manipulates the ORIGINAL Array. 
+console.log("C ", myArr);  // => C  [ 0, 4, 5 ]
+console.log(myn2); // => [ 1, 2, 3 ]
