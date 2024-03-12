@@ -17,9 +17,19 @@ const all_new_heros = [...marvel_heros, ...dc_heros] // Same output as Concat. /
   // Most people prefer this over CONCAT Operator to Concat/Add more than One Array.
 console.log(all_new_heros);
 
-const another_array = [ 1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]] ]
+const another_array = [ 1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]] ] // If you want a SINGLE Array
+    // =>  [                              // and Do Not want an Array inside an Array inside      
+    //          1, 2, 3, 4, 5,            // an Array then use the FLAT Method
+    //          6, 7, 6, 7, 4,
+    //          5
+    //       ]
+const real_another_array = another_array.flat(Infinity) // Here thr DEPTH is = 2 but you can use
+console.log(real_another_array);       // INFINITY , so that you don't have to calculate the 
+                                      // Depth Yourself.
 
-const real_another_array = another_array.flat(Infinity)
-console.log(real_another_array);
+console.log(Array.isArray("Hitesh")); // => false. Checks whether "HITESH" is an ARRAY or not?? 
+console.log(Array.isArray(["Hitesh"])); // => true
+console.log(Array.from("Hitesh")); // => [ 'H', 'i', 't', 'e', 's', 'h' ]
+
 
 
