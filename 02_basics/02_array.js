@@ -30,6 +30,17 @@ console.log(real_another_array);       // INFINITY , so that you don't have to c
 console.log(Array.isArray("Hitesh")); // => false. Checks whether "HITESH" is an ARRAY or not?? 
 console.log(Array.isArray(["Hitesh"])); // => true
 console.log(Array.from("Hitesh")); // => [ 'H', 'i', 't', 'e', 's', 'h' ]
+   // Tries to CONVERT the Value into an Array.
 
+   console.log(Array.from({name: "hitesh" })) // => []. EMPTY ARRAY.
+    // It can not directly convert it so it gives an Empty Array. Here it is Object, key value pair. Interesting Case for INTERVIEWS.
+
+let score1 = 100    
+let score2 = 200    
+let score3 = 300    
+
+console.log(Array.of(score1, score2, score3)); // => [ 100, 200, 300 ]
+// Returns a new Array from a set of Elements. Now set of elements can be anything like
+                                             // it can be Variables  or Arrays or Anything. 
 
 
