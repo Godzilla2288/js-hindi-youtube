@@ -19,7 +19,7 @@ const JsUser = {
 }
 
 console.log(JsUser.email); // Try Not to use this technique
-console.log(JsUser["email"]); // *That's why " " is being used.
+console.log(JsUser["email"]); // *That's why " " is being used. Prefer this Method
 // console.log(JsUser.full name); //  Wrong Syntax. we can not access the ***Above key from the 
                                     //  Dot Method.
 // console.log(JsUser."full name"); //  Wrong Syntax
@@ -33,9 +33,22 @@ console.log(typeof JsUser.isLoggedIn);   // => Boolean
 console.log(typeof JsUser.lastLoginDays);   // => Object
 console.log(typeof JsUser.email);   // => String
 console.log(typeof JsUser["full name"]);   // => String
+console.log(JsUser['email']); // => hitesh@google.com
 
-
-
-
-
+JsUser.email = "hitesh@chatgpt.com" // How to change Object Values or Overwrite them.
+                                     // => hitesh@chatgpt.com   // Email Value Changed.
+Object.freeze(JsUser) // Locking/Freezing of Values so that no one can Change them. 
+JsUser.email = "hitesh@microsoft.com"
+console.log(JsUser); 
+/*  => {
+  name: 'Hitesh',
+  'full name': 'Hitesh Choudhary',
+  age: 18,
+  location: 'Jaipur',
+  email: 'hitesh@chatgpt.com',
+  isLoggedIn: false,
+  lastLoginDays: [ 'Monday', 'Saturday' ],
+  [Symbol(key1)]: 'mykey1'                   // Symbol
+}
+       */
 
