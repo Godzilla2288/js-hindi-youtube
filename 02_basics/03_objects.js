@@ -37,7 +37,7 @@ console.log(JsUser['email']); // => hitesh@google.com
 
 JsUser.email = "hitesh@chatgpt.com" // How to change Object Values or Overwrite them.
                                      // => hitesh@chatgpt.com   // Email Value Changed.
-Object.freeze(JsUser) // Locking/Freezing of Values so that no one can Change them. 
+// Object.freeze(JsUser) // Locking/Freezing of Values so that no one can Change them. 
 JsUser.email = "hitesh@microsoft.com" // Email Value does not Change*
 console.log(JsUser); 
 /*  => {
@@ -51,10 +51,20 @@ console.log(JsUser);
   [Symbol(key1)]: 'mykey1'                   // Symbol
   }       */
 
-  JsUser.greeting = function () {
+  JsUser.greeting = function () { // Adding a FUNCTION to the Object
       console.log("Hello JS user");
   }
+  JsUser.greetingTwo = function () {
+    console.log( `Hello JS user ${this.name}` ); // Only way to Reference the NAME inside this
+ }     //  => Hello JS user Hitesh .                           // Object. { THIS = IMPORTANT }
 
-  console.log(JsUser.greeting());
+console.log(JsUser.greeting); // => [Function (anonymous)]
+ // The Function did not get Executed and only Reference of the Function came back. IMPORTANT
 
+  console.log(JsUser.greeting()); // Accessing the greeting Function and the only way to 
+                                           // Access a FUNCTION.
+  console.log(JsUser.greetingTwo());
 
+// Final Note : whenever we access Object Values, Majority of the time we will Access it
+    //  through the DOT Method but there are Few cases where we have to use Square Brackets
+    //  like for Smybols. Ex - {console.log(typeof JsUser[mySym]);}
