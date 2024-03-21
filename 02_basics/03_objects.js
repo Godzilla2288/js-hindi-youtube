@@ -38,17 +38,23 @@ console.log(JsUser['email']); // => hitesh@google.com
 JsUser.email = "hitesh@chatgpt.com" // How to change Object Values or Overwrite them.
                                      // => hitesh@chatgpt.com   // Email Value Changed.
 Object.freeze(JsUser) // Locking/Freezing of Values so that no one can Change them. 
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "hitesh@microsoft.com" // Email Value does not Change*
 console.log(JsUser); 
 /*  => {
   name: 'Hitesh',
   'full name': 'Hitesh Choudhary',
   age: 18,
   location: 'Jaipur',
-  email: 'hitesh@chatgpt.com',
+  email: 'hitesh@chatgpt.com',*
   isLoggedIn: false,
   lastLoginDays: [ 'Monday', 'Saturday' ],
   [Symbol(key1)]: 'mykey1'                   // Symbol
-}
-       */
+  }       */
+
+  JsUser.greeting = function () {
+      console.log("Hello JS user");
+  }
+
+  console.log(JsUser.greeting());
+
 
