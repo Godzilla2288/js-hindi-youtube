@@ -1,4 +1,4 @@
-
+// {} = Empty Object
 
 // const tinderuser = new Object() => {} // Singleton Object
 const tinderuser = {} // => {}  // Non Singleton Object
@@ -27,11 +27,11 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {2: "c", 4: "d"}
 const obj4 = {5: "e", 5: "f"}
 
-// const obj3 = { obj1, obj2}
+ const obj3 = { obj1, obj2}
 
 // const obj3 = Object.assign(obj1, obj2,obj4)
 
-const obj3 = {...obj1, ...obj2, ...obj4}
+// const obj3 = {...obj1, ...obj2, ...obj4}
 console.log(obj3);
 
 
