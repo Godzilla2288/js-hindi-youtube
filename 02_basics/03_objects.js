@@ -5,6 +5,8 @@
 
 const mySym = Symbol("key1") // defining a Symbol.
 
+// Unlike in Arrays where you could only Define VALUES , in case of Objects you
+// can Define Both  KEYS  and VALUES.
 
 const JsUser = {
    name: "Hitesh", // behind the scenes the NAME Key is being kept as a String*
