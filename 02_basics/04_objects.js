@@ -92,3 +92,39 @@ console.log(tinderuser.hasOwnProperty('Sammy')); // => false // ??. Does Not wor
 
 
 // Terminal = node 02_basics/04_objects.js
+
+            // Object de-structure
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+console.log(course.courseInstructor); //  => hitesh
+// This method to access the object is all right and there is nothing wrong in it, you can also
+// use the square bracket notation, but sometimes when you want a more clean code then you 
+// use the Syntax Below.
+
+const {courseInstructor} = course  // Inside the curly braces ({}), you write the value which  
+                          //  you  want to Extract and in the right hand side the Object Name.
+console.log(courseInstructor); // => hitesh
+
+const {courseInstructor: instructor} = course  // If you think that 'courseInstructor' is a long
+//  name then you can name it as you wish, like in this case 'courseInstructor' is Renamed to
+//  'Instructor'. we can de-structure any value we want.
+console.log(instructor);  //  => hitesh
+
+        // API
+
+// {
+//         "name": "hitesh",
+//         "coursename": "js in hindi",
+//         "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
