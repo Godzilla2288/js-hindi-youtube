@@ -43,17 +43,15 @@ const obj4 = {5: "a", 6: "b"}
       // SPREAD OPERATOR
 const obj3 = {...obj1, ...obj2, ...obj4} //  Same concept as ARRAY Merging and 90% of the time 
                                           // WE will use this SYNTAX.
-   console.log(obj3); // =>  { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+//    console.log(obj3); // =>  { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
 
 
-// const obj1 = {1: "a", 2: "b"}
-// const obj2 = {2: "c", 4: "d"}
-// const obj4 = {5: "e", 5: "f"}
+// const obj1 = {1: "a", 2: "b"}   // When MERGING Objects there can not be SAME KEYS,
+// const obj2 = {2: "c", 4: "d"}   // however there can be Same Values.
+// const obj4 = {5: "e", 5: "a"}   //
 
-//  const obj3 = { obj1, obj2}
-
-
-
+  // const obj3 = {...obj1, ...obj2, ...obj4}
+console.log(obj3);           // => { '1': 'a', '2': 'c', '4': 'd', '5': 'a' }
 
 
 // When the VALUES comes from the DATABASE, it comes like this below :
@@ -75,7 +73,7 @@ const users = [ // Majority of the times when it will come from the Database it 
 ]
 
 console.log(users[1].id); // => 2
-console.log(tinderuser);
+console.log(tinderuser);  // =>  { id: '123abc', name: 'Sammy', isLoggedIn: false }
 
 //  Method to get all the Keys of an Object
 console.log(Object.keys(tinderuser)); // =>  [ 'id', 'name', 'isLoggedIn' ] // Array Datatype.
@@ -86,7 +84,7 @@ console.log(Object.values(tinderuser)); // => [ '123abc', 'Sammy', false ]  // A
 console.log(Object.entries(tinderuser));  //  Not used often
 // => [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-// Checks whether a Value exists or not.   When using a loop on a Object to check if a Value
+// Checks whether a Value/Property exists or not.When using a loop on a Object to check if a Value
 //      Exists or Not and if the Value does not exist then it may crash , that's why it is Used.
 
 console.log(tinderuser.hasOwnProperty('name')); // => true // Only works on KEYS.
