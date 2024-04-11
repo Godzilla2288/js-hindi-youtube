@@ -30,7 +30,7 @@ for (let i = 1; i <=10; i++) {
 
 let myArray = ["flash", "batman", "superman"]
 // console.log(myArray.length);   //  => 3
-for (let index = 0; index <= myArray.length; index++) {
+for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
     // console.log(element);
 }
