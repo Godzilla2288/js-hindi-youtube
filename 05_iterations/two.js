@@ -13,13 +13,18 @@ while (arr < myArray.length) {
     arr = arr + 1    // or, arr++. Same output and the same thing but Code Readability should be 
 }                                                               // the Topmost Priority.
 
+// The Important thing is not to write Short Code But the Readability of the Code.
+
+// There is nothing Right or Wrong in Programming. End of the day, you should get the 
+//  Output/Result you are asked to get.
 
 
+let score = 20 
 
-
-
-
-
+do {
+    console.log(`Score is ${score}`);
+    score++                             //  => Score is 20
+} while (score <= 10);
 
 
 
