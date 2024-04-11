@@ -5,9 +5,9 @@
 for (let i = 0; i < 10; i++) {    //  ctrl + D for Duplicating. //   => 0
     const element = i;                                          //   => 1
     if (element == 5) {                                         //   => 2
-        // console.log("5 is best number");                        //   => 3
+        console.log("5 is best number");                        //   => 3
     }                                                           //   => 4
-    // console.log(element);                                       //   => 5 is best number
+    console.log(element);                                       //   => 5 is best number
 }                                                               //   => 5
                                                                 //   => 6
 // console.log(i);                                              //   => 7
