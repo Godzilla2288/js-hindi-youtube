@@ -73,7 +73,7 @@ const myObject = {
 
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);            // =>   TypeError: myObject is not iterable      
-// }
+// }                                       // You have to use "for in" loop to make it iterable**.
 
 
 
