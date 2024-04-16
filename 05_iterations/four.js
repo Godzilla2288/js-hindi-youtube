@@ -2,7 +2,7 @@
 
 const myObject = {
     js: 'javascript',
-    cpp: 'C++',
+    cpp: 'C++',                                      // Object
     rs: 'ruby',
     swift: 'swift by apple'
 }
@@ -25,7 +25,7 @@ for (const key in programming) {          // => 0
                                           // => 3
                                           // => 4
 
-for (const key in programming) {     
+for (const key in programming) {                          // Array
     console.log(programming[key]);                
 }
 
