@@ -1,5 +1,8 @@
 // Terminal - node 05_iterations/four.js
 
+//     For  in  Loop                                       // By default this Loop is used for
+                                                           // Objects and Maps.
+
 const myObject = {
     js: 'javascript',
     cpp: 'C++',                                      // Object
@@ -19,7 +22,7 @@ for (const key in myObject) {
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
-for (const key in programming) {          // => 0
+for (const key in programming) {          // => 0              // Only prints the Indexing.
     console.log(key);                     // => 1
 }                                         // => 2
                                           // => 3
@@ -37,9 +40,15 @@ for (const key in programming) {                          // Array
 // cpp
 
 
+const map = new Map()
+map.set('IN', "India")                      
+map.set('USA', "United States of America")  
+map.set('Fr', "France") 
+map.set('IN', "India")  
 
-
-
+for (const key in map) {
+    console.log(key);                //  => No Output
+}
 
 
 

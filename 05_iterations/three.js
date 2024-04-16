@@ -1,7 +1,7 @@
 // Terminal - node 05_iterations/three.js
 
-//  for of
-
+//     For  of  Loop                                       // By default this Loop is used for
+                                                           // Arrays and Maps.
 // ["", "", ""]
 // [{}, {}, {}]
 
