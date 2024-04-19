@@ -6,9 +6,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
                            // YouTube video TimeStamp - 24:00 - ch29
 coding.forEach( function (val) {             // Callback Function has No function 'Name'.
-    // console.log(val);                        // Here 'val' is the Parameter.
+    console.log(val);                        // Here 'val' is the Parameter.
 } )
-
+                                             // "forEach" Executes by Itself.
 //  =>
 // js
 // ruby
@@ -33,7 +33,7 @@ function printMe(item){
 }
 
 // coding.forEach(printMe)               // Only giving the Reference of the function and not 
-                                      // Executing it.
+                                   // Executing it. Here "printMe" Function is used as 'Parameter'
 //  =>
 // js
 // ruby

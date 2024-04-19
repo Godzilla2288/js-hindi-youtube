@@ -3,7 +3,7 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 const values = coding.forEach( (item) => {
-    console.log(item);                                  // forEach does not Return Values.
+    console.log(item);                                  // forEach does not Return Values.*
     return item
 } )
 
@@ -15,9 +15,10 @@ console.log(values);
 // java
 // python
 // cpp
-// undefined
+// undefined*
 
-//                      Filter
+// _____________________________ Filter _________________________________________________
+// Filter matlab jo True hoga wahi Pass hoga.
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                             
